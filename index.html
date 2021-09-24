@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karl Boehringer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9e41a64b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <a class="logo" href="#"><i class="fas fa-home fa-2x"></i></a>
+        <div class="hamB">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</i></a></li>
+            <li><a href="#project-link">Projects</a></li>
+            <li><a href="#about-link">About Me</a></li>
+            <li><a href="#contact-link">Resume / Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class='circle'>
+        <img class="circleImg" src="img/profPic.jpg" alt="Karl's profile"></img>
+        <h1>Karl Boehringer</h1>
+        <p>Software Developer</p>
+    </div>
+
+    <!-- span is target for nav link -->
+    <span class="p-target"><a id="project-link"></a></span>
+    <div class="containers">
+        <h2 class="headings">Projects</h2>
+        <div class="inner-container project-inner">
+            <a class="project-1 project-all" href="project1.html">
+                <img class="project-img" src="img/LG.png" alt="8-bit hearts"></img>
+                <p>Designer Portfolio</p>
+            </a>
+            <a class="project-2 project-all" href="project2.html">
+                <img class="project-img" src="img/heart.gif" alt="8-bit hearts"></img>
+                <p>Retro Gaming Page</p>
+            </a>
+            <a class="project-3 project-all" href="project3.html">
+                <img class="project-img pImg3" src="img/wave.jpg" alt="Great Wave"></img>
+                <p>Museum App</p>
+            </a>
+        </div>
+    </div>
+
+    <span class="a-target"><a id="about-link"></a></span>
+    <div class="containers">
+        <h2 class="headings">About Me</h2>
+        <div class="inner-container about-innerC">
+            <p>
+                I love to learn and build things. In a past life, this led me to teaching history and art.
+            </p>
+            <p>
+                Today however, I have dedicated myself to creating and building the things that float around in my head.
+                I spend most of my time programming projects (like the website you're on) and learning as much as I can
+                about software development.
+            </p>
+            <p>
+                In my offtime, I enjoy creating digital art and photography. Here is a little
+                peek at some of my work.
+            </p>
+            <div class="about-img-container">
+                <img class="about-img" src="img/globe.jpg" alt="globe being struck by sunlight">
+                <img class="about-img" src="img/dog.jpg" alt="ratty dog">
+            </div>
+        </div>
+    </div>
+
+    <span class="r-target"><a id="contact-link"></a></span>
+    <a class="resume" target="_blank" rel="noopener noreferrer" href="Karl Boehringer Resume.pdf" download>
+        <h2>Resume</h2>
+    </a>
+
+    <foot class='foot'>
+        <h2>Contact</h2>
+        <p class="from-you">I would love to hear from you!</p>
+        <div class="email-container">
+            <i class="far fa-times-circle fa-2x"></i>
+            <form class="email-form" action="https://formsubmit.co/kboeh3@gmail.com" method="POST">
+                <input class="nameEmail" type="text" name="name" placeholder="Name" required>
+                <input class="nameEmail" type="email" name="email" placeholder="Email Address (optional)">
+                <textarea class="message" rows="5" cols="60" name="description"
+                    placeholder="What can I do for you?"></textarea>
+                <input type="hidden" name="_subject" value="New submission!">
+                <!-- <input type="email" name="email" required> -->
+                <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact">
+            <i class="fas fa-envelope fa-2x"></i>
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/karl-boehringer"><i
+                    class="fab fa-linkedin fa-2x"></i></a>
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/kboeh"><i
+                    class="fab fa-github fa-2x"></i></a>
+        </div>
+    </foot>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
