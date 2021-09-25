@@ -120,8 +120,8 @@ li.fade {
 
 /* positions a span which which act as anchor for the nav link targets */
 .p-target { 
-    position: relative;
-    top: -76px;
+    position: absolute;
+    top: 490px;
     visibility: hidden;
 }
 
@@ -331,26 +331,6 @@ a:visited {
     padding: 10px 10px 20px 10px;
 }
 
-/* email thank you page */
-.e-response {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #5b78c7;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: white;
-    height: 374px;
-    width: 100%;
-    max-width: 558px;
-    font-size: 25px;
-    gap: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 7px -2px grey;
-    margin: auto;
-}
-
 .fa-times-circle {
     align-self: flex-end;
     cursor: pointer;
@@ -416,6 +396,26 @@ a:visited {
     display: flex;
 }
 
+/* email thank you page */
+.e-response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5b78c7;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    height: 374px;
+    width: 100%;
+    max-width: 558px;
+    font-size: 25px;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 7px -2px grey;
+    margin: auto;
+}
+
 .fa-envelope {
     color: rgb(228, 169, 61);
     cursor: pointer;
@@ -453,15 +453,19 @@ a:visited {
 .project-page {
     padding-top: 20px;
     text-align: left;
-    color: white;
+    color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
     gap: 30px;
 }
 
 .project-page a,
 .project-page p {
-    text-decoration: none;
     align-self: flex-start;
+}
+
+.project-page a {
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .instruct-project-page {
