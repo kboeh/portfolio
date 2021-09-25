@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-padding-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
   
 body {
@@ -85,7 +90,6 @@ nav {
 
 .hamB:hover .line{
     background: rgb(228, 169, 61);
-    
 }
 
 /* fade effect below */
@@ -116,24 +120,6 @@ nav {
 
 li.fade {
     opacity: 1;
-}
-
-/* positions a span which which act as anchor for the nav link targets */
-#project-link { 
-    position: relative;
-    top: -76px;
-    visibility: hidden;
-}
-
-.a-target { 
-    position: relative;
-    top: -76px;
-    visibility: hidden;
-}
-
-.r-target { 
-    position: relative;
-    visibility: hidden;
 }
 
 .circle {
