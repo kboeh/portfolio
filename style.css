@@ -40,7 +40,6 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
-
     position: fixed;
     background-color: #5b78c7;
     height: 100vh;
@@ -66,7 +65,6 @@ nav {
 
 .nav-links li a:hover{
     color: rgb(228, 169, 61);
-    
 }
 
 .hamB {
@@ -207,8 +205,12 @@ h1 {
     border: 2px solid transparent;
 }
 
+.project-all p {
+    color: #000000;
+}
+
 .project-1 {
-    background: #d4d4d4;
+    background: #d4d4d4; 
 }
 
 .project-2 {
@@ -429,6 +431,10 @@ a:visited {
 
 .fa-linkedin:hover {
     color: rgb(58, 58, 255);
+}
+
+.fa-github {
+    color: #000000;
 }
 
 .fa-github:hover {
