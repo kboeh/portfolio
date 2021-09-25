@@ -119,9 +119,9 @@ li.fade {
 }
 
 /* positions a span which which act as anchor for the nav link targets */
-.p-target { 
-    position: absolute;
-    top: 490px;
+#project-link { 
+    position: relative;
+    top: -76px;
     visibility: hidden;
 }
 
