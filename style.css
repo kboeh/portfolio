@@ -12,7 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 nav {
@@ -23,11 +22,11 @@ nav {
 }
 
 .fa-home {
+    font-size: 35px;
     color: white;
     margin-left: 35px;
     position: absolute;
-    left: 1px;
-    top: 18%;
+    top: 24%;
 }
 
 .fa-home:hover {
@@ -317,9 +316,9 @@ a:visited {
     transform: translate(-50%, -50%);
     display: none;
     flex-direction: column;
-    border-radius: 5px;
     background-color: #5b78c7;
     border: 1px solid rgb(228, 169, 61);
+    border-radius: 10px;
     gap: 10px;
     width: 90%;
     max-width: 700px;
@@ -330,24 +329,33 @@ a:visited {
     padding: 10px 10px 20px 10px;
 }
 
+/* email thank you page */
 .e-response {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #5b78c7;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
     height: 374px;
+    width: 100%;
+    max-width: 558px;
     font-size: 25px;
     gap: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 7px -2px grey;
+    margin: auto;
 }
 
 .fa-times-circle {
     align-self: flex-end;
     cursor: pointer;
-
 }
 
 .fa-times-circle:hover {
     color: rgb(228, 169, 61);
-
 }
 
 .email-form {
@@ -359,7 +367,6 @@ a:visited {
     height: fit-content;
     gap: 12px;
     margin-top: 20px;
-    
 }
 
 .email-form input {
@@ -492,7 +499,6 @@ a:visited {
 
     .about-innerC p {
       width: 400px;
-    
     }
 
     .about-img {
@@ -549,6 +555,10 @@ a:visited {
     
     .nav-links li:nth-child(3) {
         transition: none;
+    }
+
+    .e-response {
+        box-shadow: 10px 10px 5px #475d9b;
     }
 }
 
