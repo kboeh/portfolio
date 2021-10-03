@@ -128,7 +128,7 @@ li.fade {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 65px 0 60px 0;
+    margin: 150px 0 150px 0;
 }
   
 .circleImg {
@@ -151,7 +151,7 @@ h1 {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 10px 7px -2px grey;
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 
 .containers h2,
@@ -253,7 +253,7 @@ h1 {
     color: white;
     text-decoration: none;
     box-shadow: 10px 10px 5px #475d9b;
-    margin: 195px 0 100px 0;
+    margin: 45px 0 100px 0;
 }
 
 .resume h2 {
