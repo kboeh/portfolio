@@ -468,13 +468,17 @@ a:visited {
 
 .k-logo {
     padding-top: 35px;
-    width: 550px;
+    width: 280px;
     height: auto;
 }
 
 @media (min-width: 420px) {
     .contact {
       width: 390px;  
+    }
+
+    .k-logo {
+        width: 400px;
     }
 }
 
@@ -570,6 +574,10 @@ a:visited {
 
     .e-response {
         box-shadow: 10px 10px 5px #475d9b;
+    }
+
+    .k-logo {
+        width: 550px;
     }
 }
 
