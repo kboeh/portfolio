@@ -200,18 +200,21 @@ h1 {
 }
 
 .project-2 {
+    padding: 15px 0 19px 0;
+    gap: 0px;
     background-color: rgb(255, 255, 255);
-    gap: 50px;
-    padding-top: 20px;
-    gap: 50px;
-    padding-top: 80px;
+}
+
+.project-2 img {
+    width: 120px;
+    height: auto;
 }
 
 .project-3 {
     background-color: rgb(238, 213, 159);
 }
 
-.pImg3 {
+.project-3 img {
     border-radius: 50%;
 }
 
@@ -463,10 +466,10 @@ a:visited {
     color: rgb(228, 169, 61);
 }
 
-.mario {
-    padding-bottom: 20px;
-    border: none;
-    border-radius: 0;
+.k-logo {
+    padding-top: 35px;
+    width: 550px;
+    height: auto;
 }
 
 @media (min-width: 420px) {
@@ -489,9 +492,20 @@ a:visited {
       justify-content: center;
     }
 
-    .project-2 {
-        gap: 47px;
-        padding-top: 75px;
+    .project-1 {
+        gap: 14px;;
+        padding-bottom: 30px;
+    }
+
+    .project-2 img {
+        width: 185px;
+    }
+    .project-3 {
+        gap: 16px;
+    }
+
+    .project-3 img{
+        width: 250px;
     }
 
     .about-innerC p {
@@ -571,8 +585,20 @@ a:visited {
 
     .project-1 {
         gap: 15px;
-        padding-top: 50px;
+        padding-top: 33px;
     }
+
+    .project-2 img {
+        width: 140px;
+    }
+    .project-3 {
+        gap: 10px;
+        padding-bottom: 50px;
+    }
+
+    .project-3 img {
+        width: 188px;
+    }    
 
     .about-innerC p {
         width: 805px;
@@ -601,9 +627,23 @@ a:visited {
     }
 
     .project-1 {
-        gap: 10px;
+        gap: 20px;
         padding-top: 20px;
     }
+
+    .project-2 img {
+        width: 205px;
+    }
+
+    .project-3 {
+        gap: 15px;
+        padding-top: 50px;
+    }
+
+    .project-3 img{
+        width: 270px;
+    }
+
 
     .about-innerC p {
         width: 1230px;
