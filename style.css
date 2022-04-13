@@ -614,6 +614,10 @@ a:visited {
         padding-top: 33px;
     }
 
+    .project-1 img{
+        width: 110px;
+    }
+
     .project-2 {
         gap: 10px;
         padding-bottom: 50px;
@@ -656,6 +660,10 @@ a:visited {
     .project-1 {
         gap: 20px;
         padding-top: 20px;
+    }
+
+    .project-1 img{
+        width: 170px;
     }
 
     .project-2 {
