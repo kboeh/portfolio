@@ -28,34 +28,34 @@
     </nav>
 
     <div class='circle circle-project-page'>
-        <img class="k-logo" src="img/knick.png" alt="More Knickknack text"></img>
-        <h1>E-Commerce Website</h1>
+        <img class="tomato-project-page" src="img/tomato.png" alt="tomato"></img>
+        <h1>Museum Experience App</h1>
     </div>
 
     <div class="containers">
         <div class="inner-container project-page">
             <p>
-                A UI/UX designer and I volunteered to design and build the More Knickknacks e-commerce website for a
-                business owner
-                who sells vintage items. Utilizing input from the owner, we
-                developed an interface and theme that delivers a pleasant user experience. The site sports an Americana
-                vintage color scheme and a custom logo design that is based on the origin story of More Knickknacks.
+                Food Quest is a recipe search application that consumes the Edamam API. Utilizing React hooks, I delved into their data structure to develop a number of features for the application. Depending on which feature the user is accessing, algorithms alter API calls to produce varying results.
             </p>
-            <p>
-                I built the site to be fully responsive so it delivers an enjoyable user experience on mobile to desktop
-                screen sizes. I included fun animations such as a CSS only mobile hamburger button that transitions into
-                an ‘X’
-                on-click and on-hover overlays that reveal buttons and text. Future functionality will include a
-                customer login so purchases can be tracked, favorite lists can be saved, etc. Also, no e-commerce site
-                is complete without a working shopping cart with the ability to make purchases.
+            <p> 
+                For instance, Food Quest allows the user to customize searches for recipes by inputting ingredients and selecting health conscious options via checkboxes.
             </p>
-
-            <p>Status: currently under development.</p>
+            <p> 
+                At the top of every page the user can simply enter ingredients to quickly search for corresponding recipes. This feature stores the user’s queries in local storage and algorithms then use those queries to render recipes on another page.
+            </p>
+            <p> 
+                In addition, the homepage features three example dishes which change on each render. The navigation bar includes a ‘random button’ that renders a random list of recipes in a new page.
+            </p>
+            <p> 
+                In order to achieve varying levels of functionality from page to page while reducing redundancy, I built reusable components which I passed props into. I also used try/catch statements within Axios API calls to handle errors in order to provide users with a smoother experience.
+            </p>
 
             <p class="instruct-project-page">Please use the links below to view the repositories and pages:</p>
 
-            <a target=_blank rel=noreferrer href="https://github.com/KBoeh/knickknacks">More Knickknacks Repository</a>
-            <a target=_blank rel=noreferrer href="https://kboeh.github.io/knickknacks/">More Knickknacks Page</a>
+            <a target=_blank rel=noreferrer
+                href="https://github.com/KBoeh/foodquest/tree/main">Food Quest Main Page
+                Repository</a>
+            <a target=_blank rel=noreferrer href="kboeh.github.io/foodquest/">Food Quest Website Application.</a>
         </div>
 
 
