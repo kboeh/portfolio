@@ -6,103 +6,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karl Boehringer</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c9e41a64b4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav>
-        <a class="logo" href="#" aria-label="home"><i class="fas fa-home"></i></a>
+        <a class="logo shrink" href="#">
+            <img src="img/logo.png" alt="K.B. logo">
+        </a>
         <div class="hamB" aria-label="navigation">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</i></a></li>
             <li><a href="#project-link">Projects</a></li>
-            <li><a href="#about-link">About Me</a></li>
-            <li><a href="#contact-link">Resume / Contact</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#contact-link">Contact</a></li>
+            <li><a target="_blank" href="Karl Boehringer Resume.pdf">Resume</a></a></li>
         </ul>
     </nav>
 
-    <header class='circle'>
-        <img class="circle-img dev-img" src="img/dev.png" alt="Karl's profile"></img>
+    <header class='home-header'>
+        <img class="dev-img" src="img/dev.png" alt="Karl's profile"></img>
         <h1>Karl Boehringer</h1>
         <p>Front-End Developer</p>
     </header>
 
-    <div class="containers">
-        <h2 class="headings" id="project-link">Projects</h2>
-        <div class="inner-container project-inner">
-            <a class="project-1 project-all" href="project1.html">
-                <img class="project-img" src="img/LG.png" alt="outline of woman"></img>
-                <p>Designer Portfolio</p>
-            </a>
-            <a class="project-2 project-all" href="project2.html">
-                <img class="project-img" src="img/tomato.png" alt="tomato"></img>
-                <p>Recipe App</p>
-            </a>
-            <a class="project-3 project-all" href="project3.html">
-                <img class="project-img" src="img/flower.png" alt="flower"></img>
-                <p>E-Commerce Website</p>
-            </a>
+    <main class="all-projects-container" id="project-link">
+        <div class="project-container clip">
+            <div class="project-img-container">
+                <a class="project-img-link" href="project1.html">
+                    <img class="first-project-img" src="img/LG.png" alt="outline of woman"></img>
+                </a>
+            </div>
+            <p>Designer Portfolio</p>
         </div>
-    </div>
-
-    <div class="containers">
-        <h2 class="headings" id="about-link">About Me</h2>
-        <div class="inner-container about-innerC">
-            <p>
-                I enjoy learning, problem solving, and creating. Combined with a passion for technology, these interests
-                have led me to software development.
-            </p>
-            <p>
-                As a front end developer I love to design and build visually stimulating content that offers responsive
-                and smooth functionality for my users. I am constantly learning and practicing my craft and I am always
-                excited to add the next skill to my toolbox.
-            </p>
-            <p>
-                When I'm taking a break from coding, you might find me creating digital art or enjoying photography.
-                Here is a little peek at some of my work.
-            </p>
-            <div class="about-img-container">
-                <img class="about-img" src="img/globe.jpg" alt="globe being struck by sunlight">
-                <img class="about-img" src="img/prisoner.png" alt="ratty dog">
+        <div class="project-container clip-mid">
+            <p>Recipe App</p>
+            <div class="project-img-container">
+                <a class="project-img-link" href="project2.html">
+                    <img class="second-project-img" src="img/tomato.png" alt="tomato"></img>
+                </a>
             </div>
         </div>
+        <div class="project-container clip">
+            <div class="project-img-container">
+                <a class="project-img-link" href="project3.html">
+                    <img class="third-project-img" src="img/flower.png" alt="flower"></img>
+                </a>
+            </div>
+            <p>E-Commerce Website</p>
+        </div>
+    </main>
+
+    <a class="about-link shrink" href="about.html">Learn More About Me</a>
+
+    <footer class='foot'>
+        <h2>Contact Me</h2>
+        <p class="from-you">I would love to hear from you</p>
+        <div class="contact">
+            <button class="email-button" type="button">
+               <img src="img/email.png" alt="email icon"> 
+            </button>
+            <a class="linkedin-button" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kboeh3">
+                <img src="img/linkedin.png" alt="linkedIn logo">
+            </a>
+            <a class="github-button" target="_blank" rel="noreferrer" href="https://github.com/kboeh">
+                <img src="img/github.png" alt="GitHub logo">
+            </a> 
+            <a class="resume-button" id="contact-link" target="_blank" href="Karl Boehringer Resume.pdf">
+                <img src="img/resume.png" alt="paper icon">
+            </a>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <div class="email-container">
+        <img class="shrink" src="img/close.png" alt="close button">
+        <form class="email-form" action="https://formsubmit.co/e30b87cbf7d0890356791c5aba7f5d9c" method="POST">
+            <input class="nameEmail" type="text" name="name" placeholder="Name" required>
+            <input class="nameEmail" type="email" name="email" placeholder="Email Address (optional)">
+            <textarea class="message" rows="5" cols="60" name="description" placeholder="What can I do for you?"
+                required></textarea>
+            <input type="hidden" name="_subject" value="Karl's Portfolio">
+            <input type="hidden" name="_next" value="https://kboeh.github.io/portfolio/e-response.html">
+            <button type="submit">Send</button>
+        </form>
     </div>
 
-    <a class="resume" id="contact-link" target="_blank" href="Karl Boehringer Resume.pdf">
-        <h2>Resume</h2>
-    </a>
-
-    <foot class='foot'>
-        <h2>Contact</h2>
-        <p class="from-you">I would love to hear from you!</p>
-        <div class="email-container">
-            <i class="far fa-times-circle fa-2x" aria-label="close"></i>
-            <form class="email-form" action="https://formsubmit.co/e30b87cbf7d0890356791c5aba7f5d9c" method="POST">
-                <input class="nameEmail" type="text" name="name" placeholder="Name" required>
-                <input class="nameEmail" type="email" name="email" placeholder="Email Address (optional)">
-                <textarea class="message" rows="5" cols="60" name="description" placeholder="What can I do for you?"
-                    required></textarea>
-                <input type="hidden" name="_subject" value="Karl's Portfolio">
-                <input type="hidden" name="_next" value="https://kboeh.github.io/portfolio/e-response.html">
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <div class="contact">
-            <i class="fas fa-envelope fa-2x" aria-label="email"></i>
-            <a aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"
-                href="https://www.linkedin.com/in/karl-boehringer"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a aria-label="GitHub" target="_blank" rel="noopener noreferrer" href="https://github.com/kboeh"><i
-                    class="fab fa-github fa-2x"></i></a>
-        </div>
-    </foot>
-
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

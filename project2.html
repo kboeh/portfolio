@@ -6,34 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c9e41a64b4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav>
-        <a class="logo" href="index.html" aria-label="home"><i class="fas fa-home"></i></a>
+        <a class="logo shrink" href="index.html">
+            <img src="img/logo.png" alt="K.B. logo">
+        </a>
         <div class="hamB" aria-label="navigation">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</i></a></li>
             <li><a href="index.html#project-link">Projects</a></li>
-            <li><a href="index.html#about-link">About Me</a></li>
-            <li><a href="index.html#contact-link">Resume / Contact</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="index.html#contact-link">Contact</a></li>
+            <li><a target="_blank" href="Karl Boehringer Resume.pdf">Resume</a></a></li>
         </ul>
     </nav>
 
-    <div class='circle circle-project-page'>
-        <img class="tomato-project-page" src="img/tomato.png" alt="tomato"></img>
-        <h1>Food Quest App</h1>
-    </div>
+    <header class='proj-pg-header'>
+        <img class="food-logo" src="img/foodquest-logo.png" alt="Food Quest logo text"></img>
+        <h1>Recipe App</h1>
+    </header>
 
-    <div class="containers">
-        <div class="inner-container project-page">
+    <main>
+        <div class="proj-pg-text-container">
             <p>
                 Food Quest is a recipe search application that consumes the Edamam API. Utilizing React hooks, I delved into their data structure to develop a number of features for the application. Depending on which feature the user is accessing, algorithms alter API calls to produce varying results.
             </p>
@@ -49,20 +51,20 @@
             <p> 
                 In order to achieve varying levels of functionality from page to page while reducing redundancy, I built reusable components which I passed props into. I also used try/catch statements within Axios API calls to handle errors in order to provide users with a smoother experience.
             </p>
-
-            <p class="instruct-project-page">Please use the links below to view the repositories and pages:</p>
-
-            <a target=_blank rel=noreferrer href="https://github.com/KBoeh/foodquest/tree/main">Food Quest Repository</a>
-            <a target=_blank rel=noreferrer href="https://kboeh.github.io/foodquest/">Food Quest Web App</a>
         </div>
+        <div class="proj-pg-link-container">
+            <div class="proj-pg-link">
+                 <a target=_blank rel=noreferrer href="https://kboeh.github.io/foodquest/">
+                     <img class="proj-link foodquest-link" src="img/tomato.png" alt="L.G.">
+                 </a>
+             </div>
+             <div class="proj-pg-link">
+                 <a target=_blank rel=noreferrer href="https://github.com/KBoeh/foodquest/tree/main"><img class="proj-link proj-github-link" src="img/github.png" alt="github icon"></a>
+             </div> 
+         </div>
+    </main>
 
-
-
-    </div>
-
-
+    <script src="script.js"></script>
 </body>
-
-<script src="app.js"></script>
 
 </html>

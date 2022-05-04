@@ -24,18 +24,18 @@ nav {
     height: 70px;
     width: 100%;
     background: #5b78c7;
+    z-index: 2;
 }
 
-.fa-home {
-    font-size: 35px;
-    color: white;
-    margin-left: 35px;
+.logo {
+    margin-left: 20px;
     position: absolute;
-    top: 24%;
+    top: 30%;
+    z-index: 1;
 }
 
-.fa-home:hover {
-    color: rgb(228, 169, 61) 
+.logo img{
+    width: 50px;
 }
 
 .nav-links {
@@ -44,7 +44,8 @@ nav {
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    margin-left: auto;
+    margin: auto;
+    padding-top: 40px;
     position: fixed;
     background-color: #5b78c7;
     height: 100vh;
@@ -59,7 +60,7 @@ nav {
     /* how far the circle extends */
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
-    background-color: #475d9b
+    background-color: #475d9b;
 }
 
 .nav-links li a{
@@ -69,6 +70,7 @@ nav {
 }
 
 .nav-links li a:hover{
+    transition: all .2s ease-in-out;
     color: rgb(228, 169, 61);
 }
 
@@ -78,7 +80,7 @@ nav {
     right: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
-    z-index: 2;
+    z-index: 3;
 }
 
 .line {
@@ -89,6 +91,7 @@ nav {
 }
 
 .hamB:hover .line{
+    transition: all .2s ease-in-out; 
     background: rgb(228, 169, 61);
 }
 
@@ -122,26 +125,20 @@ li.fade {
     opacity: 1;
 }
 
-.circle {
+.home-header {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 100px 0 100px 0;
+    margin: 100px 0 80px 0;
 }
   
-.circle-img {
+.dev-img {
     height: 270px;
     width: 270px;
     border-radius: 50%;
-    margin: 66px 0 20px 0;
-    border: 5px solid #5b78c7;
-    object-fit: contain;
-}
-
-.dev-img {
-    object-fit: cover;
+    margin: 40px 0 20px 0;
 }
 
 h1 {
@@ -149,150 +146,106 @@ h1 {
     margin-bottom: 15px;
 }
 
-.containers {
-    background-color: #5b78c7;
-    height: fit-content;
+/* project section on homepage */
+.all-projects-container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    box-shadow: 0 10px 7px -2px grey;
-    margin-bottom: 200px;
 }
 
-.containers h2,
-.about-innerC p {
-    color: white;
-    text-align: center;
-}
-
-.inner-container {
+.project-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    height: fit-content;
-    padding: 0 20px 20px 20px;
-}
-
-.headings {
-    margin: 20px 0 5px 0px;
-}
-
-.project-img {
-    width: 80%;
-    align-self: center;
-}
-
-.project-all {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
-    padding: 20px;
-    margin: 15px;
-    gap: 10px;
-    text-decoration: none;
+    justify-content: space-around;
+    gap: 12px;
+    background-color: #5b78c7;
+    width: 100%;
+    height: 244px;
+    color: #FFFFFF;
+    font-size: 18px;
     text-align: center;
-    border-radius: 10px;
-    border: 2px solid transparent;
+    padding: 0 15px 0 15px;
 }
 
-.project-all p {
-    color: #000000;
+.clip {
+    clip-path: polygon(0 0%, 100% 7%, 100% 93%, 0% 100%);
+    -webkit-clip-path: (0 0%, 100% 7%, 100% 93%, 0% 100%);
 }
 
-.project-1 {
-    background: #ffffff; 
+.clip-mid {
+    clip-path: polygon(0% 93%, 0 7%, 100% 0%, 100% 100%);
+    -webkit-clip-path: polygon(0% 93%, 0 7%, 100% 0%, 100% 100%);
 }
 
-.project-1 img{
-    width: 80px; 
+.project-img-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
 }
 
-.project-2 img {
-    width: 110px;
+.first-project-img {
+    width: 100px;
+    padding-bottom: 15px;
 }
 
-.project-2 {
-    background-color: rgb(255, 255, 255);
+.second-project-img {
+    width: 95px;
+    padding-bottom: 5px;
 }
 
-.project-3 {
-    padding: 15px 0 19px 0;
-    gap: 0px;
-    background-color: rgb(255, 255, 255);
-}
-
-.project-3 img {
+.third-project-img {
     width: 120px;
-    height: auto;
 }
 
-.project-all:hover {
-    border: 2px solid rgb(228, 169, 61);
-}
-
-.about-innerC {
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
-    margin-top: 15px;
-}
-
-.about-innerC p {
-    width: 90%;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-.about-img-container {
+.about-link {
     display: flex;
-    flex-direction: column;
-}
-
-.about-img {
-    width: 90%;
-    margin: 15px 15px 15px 15px;
-    border-radius: 5px;
-}
-
-.resume {
-    background-color: #5b78c7;
-    height: fit-content;
+    align-items: center;
     text-align: center;
-    border-radius: 10px;
-    width: 170px;
-    padding: 10px 5px 10px 5px;
-    font-size: 20px;
-    color: white;
     text-decoration: none;
-    box-shadow: 10px 10px 5px #475d9b;
-    margin: 45px 0 100px 0;
+    color: #FFFFFF;
+    background-color: #5b78c7;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    padding: 0 20px 0 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 55px 0 55px 0;
 }
 
-.resume h2 {
-    color: inherit;
+.shrink { 
+    transition: all .2s ease-in-out; 
+}
+    
+.shrink:hover { 
+    transform: scale(0.9); 
 }
 
-.resume:hover {
-    background-color: rgb(228, 169, 61);
-    box-shadow: 10px 10px 5px grey;
-    cursor: pointer;
-}
-
-a:visited {
-    text-decoration: none;
-    color: inherit;
-}
-
-.foot {
+footer {
     height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 164px;
+    padding: 100px 0 164px 0;
+    background-color: #5b78c7;
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    clip-path: polygon(50% 10%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
 }
 
-.from-you {
-    padding: 20px;
+footer > h2 {
+    font-size: 28px;
+}
+
+footer > p {
+    padding: 17px;
+    font-size: 19px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 30px;
@@ -304,10 +257,46 @@ a:visited {
     align-items: center;
     text-align: center;
     width: 100%;
-    gap: 40px;
+    max-width: 350px;  
     padding: 20px;
 }
 
+.contact > button, .contact > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    border-style: none;
+}
+
+.email-button img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.linkedin-button img {
+    height: 42px;
+    cursor: pointer;
+}
+
+.github-button img {
+    width: 50px;
+}
+
+.resume-button img {
+    height: 33px;
+    cursor: pointer;
+}
+
+.contact > button:hover, .contact > a:hover, .proj-pg-link:hover {
+    transition: all .5s ease-in-out; 
+    background-color: rgb(252, 187, 67);
+}
+
+/* email pop-up */
 .email-container {
     position: fixed;
     top: 50%;
@@ -326,15 +315,12 @@ a:visited {
     font-size: 18px;
     color: white;
     padding: 10px 10px 20px 10px;
+    z-index: 4;
 }
 
-.fa-times-circle {
+.email-container > img {
     align-self: flex-end;
     cursor: pointer;
-}
-
-.fa-times-circle:hover {
-    color: rgb(228, 169, 61);
 }
 
 .email-form {
@@ -393,6 +379,23 @@ a:visited {
     display: flex;
 }
 
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+.overlay.eToggle {
+    display: initial;
+}
+
 /* email thank you page */
 .e-response {
     display: flex;
@@ -413,144 +416,284 @@ a:visited {
     margin: auto;
 }
 
-.fa-envelope {
-    color: rgb(228, 169, 61);
-    cursor: pointer;
+/* project pages */
+.proj-pg-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 0 45px 0;
 }
 
-.fa-envelope:hover {
-    color: rgb(252, 187, 67);
-}
-  
-.fa-linkedin {
-    color: rgb(25, 25, 160);
-}
-
-.fa-linkedin:hover {
-    color: rgb(58, 58, 255);
+.proj-pg-designer-img {
+    width: 270px;
+    height: 270px;
+    border: 5px solid #5b78c7;
+    border-radius: 50%;
+    object-fit: contain;
 }
 
-.fa-github {
-    color: #000000;
+.food-logo {
+    width: 290px;
 }
 
-.fa-github:hover {
-    color: rgb(63, 63, 63);
+.knack-logo {
+    padding-top: 10px;
+    width: 280px;
 }
 
-/* for project pages */
-.circle-project-page {
-    margin-bottom: 45px;
+.proj-pg-header h1{
+    margin-top: 20px;
+    text-align: center;
 }
 
-.circle-project-page h1{
-    margin-top: 30px;
-}
-
-.project-page {
-    padding-top: 20px;
+.proj-pg-text-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #5b78c7;
+    font-size: 16px;
+    gap: 20px;
+    padding: 50px 15px 100px 15px;
     text-align: left;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
-    gap: 30px;
+    clip-path: polygon(0% 100%, 0 3%, 100% 0%, 100% 93%);
+    -webkit-clip-path: polygon(0% 100%, 0 3%, 100% 0%, 100% 93%);
 }
 
-.project-page a,
-.project-page p {
-    align-self: flex-start;
+.proj-pg-link-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0 15px 100px 0;
 }
 
-.project-page a {
-    color: #FFFFFF;
-    text-decoration: none;
+.proj-pg-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #FFFFFF;
+    border: 5px solid #5b78c7;
+    border-radius: 50%;
+    align-self: flex-end;
+    position: relative;
+    z-index: 1;
+    margin-top: -80px;
 }
 
-.instruct-project-page {
-    color: rgb(228, 169, 61);
+.proj-link{
+    padding-top: 6px;
 }
 
-.tomato-project-page {
+.proj-design-link {
+    width: 50px;
+}
+
+.foodquest-link {
+    padding-top: 5px;
+    width: 50px;
+}
+
+.proj-flower-link {
+    width: 70px;
+    padding-top: 7px;
+}
+
+.proj-github-link {
+    width: 70px;
+}
+
+/* about page */
+.about-header {
+    padding: 150px 0 70px 0;
+}
+
+.about-header img {
+    width: 270px;
+}
+
+.about-header h1 {
+    text-align: center;
     margin-top: 30px;
 }
 
-.project-page a:hover {
-    color: rgb(228, 169, 61);
+.about-pg-text-container {
+    padding-bottom: 50px;
 }
 
-.k-logo {
-    padding-top: 35px;
-    width: 280px;
-    height: auto;
+.about-img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 0 50px 0;
+}
+
+.about-img-container img {
+    width: 90%;
+    max-width: 370px;
 }
 
 @media (min-width: 420px) {
-    .contact {
-      width: 390px;  
+    .food-logo {
+        width: 400px;
     }
 
-    .k-logo {
+    .knack-logo {
         width: 400px;
+    }
+
+    .about-header img {
+        width: 380px;
     }
 }
 
-@media (min-width: 500px) {
-    .containers {
-        width: fit-content;
-        box-shadow: 10px 10px 5px #475d9b;
-        border-radius: 10px;
+@media (min-width: 600px) {
+    .dev-img {
+        height: 300px;
+        width: 300px;
     }
 
-    .project-all {
-      width: 400px;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .home-header h1{
+        font-size: 40px;
     }
 
-    .project-1 {
-        gap: 14px;;
-        padding-bottom: 30px;
+    .home-header p{
+        font-size: 25px;
     }
 
-    .project-1 img{
-        width: 150px;
+    .project-container {
+        height: 300px;
+        font-size: 23px;
     }
 
-    .project-2 {
-        gap: 16px;
-    }
-
-    .project-2 img{
-        width: 150px;
-    }
-
-    .project-3 img {
-        width: 185px;
+    .clip {
+        clip-path: polygon(0 0%, 100% 10%, 100% 90%, 0% 100%);
+        -webkit-clip-path: (0 0%, 100% 10%, 100% 90%, 0% 100%);
     }
     
-    .about-innerC p {
-      width: 400px;
+    .clip-mid {
+        clip-path: polygon(0% 90%, 0 10%, 100% 0%, 100% 100%);
+        -webkit-clip-path: polygon(0% 90%, 0 10%, 100% 0%, 100% 100%);
     }
 
-    .about-img {
-        width: 400px;
-        height: auto;
-        object-fit:cover;
+    .project-img-link {
+        width: 200px;
+        height: 200px;
+    }
+
+    .first-project-img {
+        width: 140px;
+    }
+    
+    .second-project-img {
+        width: 130px;
+    }
+    
+    .third-project-img {
+        width: 180px;
+    }
+
+    .about-link {
+        width: 200px;
+        height: 200px;
+        padding: 0 20px 0 20px;
+        margin: 75px 0 75px 0;
+    }
+
+    .proj-pg-designer-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .proj-pg-text-container {
+        font-size: 20px;
+        clip-path: polygon(0% 100%, 0 5%, 100% 0%, 100% 91%);
+        -webkit-clip-path: polygon(0% 100%, 0 5%, 100% 0%, 100% 91%);
+    }
+
+    .proj-pg-link {
+        width: 100px;
+        height: 100px;
+    }
+
+    .proj-github-link {
+        width: 90px;
+    }
+
+    .proj-design-link {
+        width: 60px;
+    }
+
+    .foodquest-link {
+        width: 60px;
+    }
+
+    .proj-flower-link {
+        width: 85px;
+    }
+
+    .knack-logo {
+        width: 570px;
+    }
+
+    .food-logo {
+        width: 590px;
+    }
+
+    .about-header img {
+        width: 350px;
+    }
+
+    footer h2 {
+        font-size: 35px;
+    }
+
+    footer p {
+        font-size: 25px;
+    }
+
+    .contact {
+        max-width: 450px; 
+    }
+
+    .contact > button, .contact > a {
+        width: 65px;
+        height: 65px;
+    }
+
+    .email-button img {
+        height: 50px;
+    }
+    
+    .linkedin-button img {
+        height: 56px;
+        padding-top: 1px;
+    }
+    
+    .github-button img {
+        width: 67px;
+        padding-bottom: 1px;
+    }
+    
+    .resume-button img {
+        height: 43px;
     }
 }
 
 @media (min-width: 650px) {
-    .logo {
-        display: none;
-    }
-
-    .containers {
-        box-shadow: 10px 10px 5px #475d9b;
-    }
-
     .hamB {
         display: none;
+    }
+
+    .logo {
+        z-index: 1;
+    }
+
+    .nav {
+        display: flex;
     }
 
     .nav-links li {
@@ -564,9 +707,8 @@ a:visited {
 
     .nav-links {
         flex-direction: row;
-        padding-top: 17px;
+        padding: 17px 0 0 80px;
         height: 50px;
-        width: 100%;
         clip-path: none;
         -webkit-clip-path: none;
         transition: none;
@@ -594,98 +736,69 @@ a:visited {
         box-shadow: 10px 10px 5px #475d9b;
     }
 
-    .k-logo {
-        width: 550px;
+    .knack-logo {
+        width: 600px;
     }
 }
 
-@media (min-width: 920px) {
-    .project-all {
-        width: 250px;
-        height: 250px;
+@media (min-width: 800px) {
+    .food-logo {
+        width: 700px;
     }
 
-    .project-inner {
-        flex-direction: row;
-    }
-
-    .project-1 {
-        gap: 15px;
-        padding-top: 33px;
-    }
-
-    .project-1 img{
-        width: 110px;
-    }
-
-    .project-2 {
-        gap: 10px;
-        padding-bottom: 50px;
-    }
-
-    .project-2 img {
-        width: 120px;
-    } 
-
-    .project-3 img {
-        width: 140px;
-    }
-       
-    .about-innerC p {
-        width: 805px;
+    .knack-logo {
+        width: 750px;
     }
 
     .about-img-container {
         flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0;
     }
 
     .about-img {
-        width: 390px;
-        height: auto;
+        height: 545px;
+    }
+}
+
+@media (min-width: 900px) {
+    .proj-pg-text-container{
+        padding: 80px 30px 80px 30px;
+    }
+
+    .proj-pg-link-container {
+        padding-right: 30px;
     }
 }
 
 @media (min-width: 1000px) {
-    .project-page {
-        width: 960px;
-    }
-}
-
-@media (min-width: 1365px) {
-    .project-all {
-        width: 400px;
-        height: 300px;
+    .project-container {
+        height: 400px;
+        font-size: 30px;
     }
 
-    .project-1 {
-        gap: 20px;
-        padding-top: 20px;
+    .project-img-link {
+        width: 280px;
+        height: 280px;
     }
 
-    .project-1 img{
-        width: 170px;
+    .first-project-img {
+        width: 192px;
+    }
+    
+    .second-project-img {
+        width: 190px;
+    }
+    
+    .third-project-img {
+        width: 250px;
     }
 
-    .project-2 {
-        gap: 15px;
-        padding-top: 50px;
-    }
-
-    .project-2 img{
-        width: 170px;
-    }
-
-    .project-3 img {
-        width: 205px;
-    }
-
-    .about-innerC p {
-        width: 1230px;
-        margin: 3px 30px 30px 30px;
-    }
-
-    .about-img-container {
-        gap: 150px;
-        margin-bottom: 100px;
+    .about-link {
+        width: 280px;
+        height: 280px;
+        font-size: 30px;
+        line-height: 40px;
+        margin: 100px 0 100px 0;
     }
 }
