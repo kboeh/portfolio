@@ -1,12 +1,14 @@
 // toggle for ham button and fade effect for links within drop-down menu
 // activates the listener when a link is clicked within the dropdown menu
-const hamburger = document.querySelectorAll("svg, .nav-links li");
-const navLinks = document.querySelector(".nav-links");
+const hamburger = document.querySelectorAll(".ham, .nav-links li");
+const hamAnimate = document.querySelector(".ham");
+const navMenu = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 
 hamburger.forEach((ham) => {
     ham.addEventListener("click", () => {
-        navLinks.classList.toggle("open");
+        navMenu.classList.toggle("open");
+        hamAnimate.classList.toggle("active");
         links.forEach(link => {
             link.classList.toggle("fade");
         });
@@ -39,14 +41,10 @@ function reveal() {
 
     if (elementTop < windowHeight - projectVisible) {
       slideIn[i].classList.add("proj-active");
-    } else {
-      slideIn[i].classList.remove("proj-active");
     }
 
     if (elementTop < windowHeight - buttonVisible) {
       slideIn[i].classList.add("button-active");
-    } else {
-      slideIn[i].classList.remove("button-active");
     }
   }
 }
