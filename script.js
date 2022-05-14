@@ -36,7 +36,7 @@ function reveal() {
   for (let i = 0; i < slideIn.length; i++) {
     const windowHeight = window.innerHeight;
     const elementTop = slideIn[i].getBoundingClientRect().top;
-    const projectVisible = 300;
+    const projectVisible = 200;
     const buttonVisible = 0;
 
     if (elementTop < windowHeight - projectVisible) {
