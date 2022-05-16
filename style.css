@@ -697,7 +697,7 @@ footer > p {
 @media (min-width: 600px) {
     .dev-img {
         height: 300px;
-        width: 300px;
+        width: auto;
     }
 
     .home-header h1{
