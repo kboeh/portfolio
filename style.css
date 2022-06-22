@@ -10,7 +10,7 @@ html {
 }
   
 body {
-    background-color: white;
+    background-color: #ededec;
     min-height: 100vh;
     font-size: 23px;
     font-family: 'Orbitron', sans-serif;
@@ -23,14 +23,16 @@ nav {
     position: fixed;
     height: 70px;
     width: 100%;
-    background: #5b78c7;
+    background: #162936;
     z-index: 2;
+    filter: drop-shadow(0px 2px 4px #15FFEE);
 }
 
 .logo {
     margin-left: 20px;
     position: absolute;
-    top: 35%;
+    top: 33%;
+    filter: drop-shadow(0px 0px 20px #15FFEE);
 }
 
 .logo-z {
@@ -50,7 +52,7 @@ nav {
     margin: auto;
     padding-top: 40px;
     position: fixed;
-    background-color: #5b78c7;
+    background-color: #162936;
     height: 100vh;
     width: 100%;
     /* size circle starts at */
@@ -63,7 +65,6 @@ nav {
     /* how far the circle extends */
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
-    background-color: #475d9b;
 }
 
 .nav-links li a{
@@ -72,7 +73,13 @@ nav {
     font-size: 16px;
 }
 
+.nav-links li a:hover, .about-link:hover {
+    transition: all .5s ease-in-out; 
+    color: #15FFEE;
+}
+
 /* hamburger animation */
+
 svg {
     position: absolute;
     cursor: pointer;
@@ -171,7 +178,7 @@ li.fade {
 }
 
 .home-header {
-    background-color: white;
+    background-color: #ededec;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,6 +204,7 @@ li.fade {
     width: 270px;
     border-radius: 50%;
     margin: 40px 0 20px 0;
+    filter: drop-shadow(0px -10px 20px #15FFEE);
 }
 
 h1 {
@@ -216,7 +224,7 @@ h1 {
     align-items: center;
     justify-content: space-around;
     gap: 12px;
-    background-color: #5b78c7;
+    background-color: #162936;
     width: 100%;
     height: 244px;
     color: #FFFFFF;
@@ -241,6 +249,7 @@ h1 {
     transform: translateX(-150px);
     opacity: 0;
     transition: 1s all ease;
+    filter: drop-shadow(0px 0px 10px #15FFEE);
 }
 
 .project-img-container-mid {
@@ -248,6 +257,7 @@ h1 {
     transform: translateX(150px);
     opacity: 0;
     transition: 1s all ease;
+    filter: drop-shadow(0px 0px 10px #15FFEE);
 }
 
 .project-img-container.proj-active, .project-img-container-mid.proj-active {
@@ -285,12 +295,12 @@ h1 {
     text-align: center;
     text-decoration: none;
     color: #FFFFFF;
-    background-color: #5b78c7;
+    background-color: #162936;
     width: 156px;
     height: 156px;
     border-radius: 50%;
     padding: 0 20px 0 20px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 4px 4px #15FFEE);
     margin: 55px 0 55px 0;
 }
 
@@ -318,7 +328,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 100px 0 164px 0;
-    background-color: #5b78c7;
+    background-color: #162936;
     text-align: center;
     color: #FFFFFF;
     -webkit-clip-path: polygon(50% 10%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
@@ -356,6 +366,7 @@ footer > p {
     border-radius: 50%;
     background-color: #FFFFFF;
     border-style: none;
+    filter: drop-shadow(0px 0px 10px #15FFEE);
 }
 
 .email-button img {
@@ -379,7 +390,7 @@ footer > p {
 
 .contact > button:hover, .contact > a:hover, .proj-pg-link:hover {
     transition: all .5s ease-in-out; 
-    background-color: rgb(252, 187, 67);
+    background-color: #15FFEE;
 }
 
 .slide-up {
@@ -412,13 +423,14 @@ footer > p {
 /* email pop-up */
 .email-container {
     position: fixed;
-    top: 50%;
+    top: -800px;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
+    display: flex;
     flex-direction: column;
-    background-color: #5b78c7;
-    border: 1px solid rgb(228, 169, 61);
+    background-color: #162936;
+    border: 3px solid #15FFEE;
+    filter: drop-shadow(0px 0px 10px #15FFEE);
     border-radius: 10px;
     gap: 10px;
     width: 90%;
@@ -429,11 +441,13 @@ footer > p {
     color: white;
     padding: 10px 10px 20px 10px;
     z-index: 4;
+    transition: 1.5s all ease;
 }
 
 .email-container > img {
     align-self: flex-end;
     cursor: pointer;
+    filter: drop-shadow(0px 0px 3px #15FFEE);
 }
 
 .email-form {
@@ -477,19 +491,21 @@ footer > p {
     align-self: center;
     border-style: none;
     margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     font-size: 20px;
-    color: white;
-    background-color: rgb(228, 169, 61);
+    color: rgb(0, 0, 0);
+    background-color: #15FFEE;
+    filter: drop-shadow(0px 0px 3px #15FFEE);
     cursor: pointer;
 }
 
 .email-form button:hover {
-    box-shadow: 5px 5px 5px #475d9b;
+    filter: drop-shadow(0px 0px 5px #15FFEE);
 }
 
 .email-container.eToggle {
-    display: flex;
+    top: 50%;
+    transition: 1s all ease;
 }
 
 .overlay {
@@ -524,7 +540,7 @@ footer > p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #5b78c7;
+    background-color: #162936;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: white;
@@ -533,7 +549,8 @@ footer > p {
     font-size: 19px;
     gap: 20px;
     border-radius: 50%;
-    box-shadow: 0 10px 7px -2px grey;
+    border: 10px solid #15FFEE;
+    filter: drop-shadow(0px 0px 20px #15FFEE);
     animation: bounce 300ms alternate 6 cubic-bezier(.2, .65, .6, 1);
 }
 
@@ -560,7 +577,7 @@ footer > p {
 .proj-pg-designer-img {
     width: 270px;
     height: 270px;
-    border: 5px solid #5b78c7;
+    border: 5px solid #162936;
     border-radius: 50%;
     object-fit: contain;
 }
@@ -569,7 +586,7 @@ footer > p {
     width: 290px;
 }
 
-.knack-logo {
+.this-logo {
     padding-top: 10px;
     width: 280px;
 }
@@ -582,7 +599,7 @@ footer > p {
 .proj-pg-text-container {
     display: flex;
     flex-direction: column;
-    background-color: #5b78c7;
+    background: #162936;
     font-size: 16px;
     gap: 20px;
     padding: 50px 15px 100px 15px;
@@ -607,7 +624,7 @@ footer > p {
     width: 80px;
     height: 80px;
     background-color: #FFFFFF;
-    border: 5px solid #5b78c7;
+    border: 5px solid #162936;
     border-radius: 50%;
     align-self: flex-end;
     position: relative;
@@ -652,7 +669,29 @@ footer > p {
 }
 
 .about-pg-text-container {
-    padding-bottom: 50px;
+    padding-bottom: 75px;
+}
+
+.tech-logo-container {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    padding-top: 25px;
+}
+
+.tech-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.tech-logo img{
+    height: 60px;
+    width: auto;
+    padding-bottom: 2px;
 }
 
 .about-img-container {
@@ -670,10 +709,6 @@ footer > p {
 
 @media (min-width: 420px) {
     .food-logo {
-        width: 400px;
-    }
-
-    .knack-logo {
         width: 400px;
     }
 
@@ -753,6 +788,14 @@ footer > p {
         -webkit-clip-path: polygon(0% 100%, 0 5%, 100% 0%, 100% 91%);
     }
 
+    .tech-logo {
+        font-size: 17px;
+    }
+
+    .tech-logo img{
+        padding-bottom: 5px;
+    }
+
     .proj-pg-link {
         width: 100px;
         height: 100px;
@@ -774,8 +817,8 @@ footer > p {
         width: 85px;
     }
 
-    .knack-logo {
-        width: 570px;
+    .this-logo {
+        width: 350px;
     }
 
     .food-logo {
@@ -856,25 +899,16 @@ footer > p {
     .nav-links.open {
         clip-path: none;
         -webkit-clip-path: none;
-        background-color: #5b78c7; 
     }
 
     .nav-links li:nth-child(1), .nav-links li:nth-child(2), .nav-links li:nth-child(3), .nav-links li:nth-child(4) {
         transition: all .2s ease-in-out; 
-    }
-
-    .knack-logo {
-        width: 600px;
     }
 }
 
 @media (min-width: 800px) {
     .food-logo {
         width: 700px;
-    }
-
-    .knack-logo {
-        width: 750px;
     }
 
     .about-img-container {
