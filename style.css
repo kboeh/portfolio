@@ -610,6 +610,12 @@ footer > p {
     -webkit-clip-path: polygon(0% 100%, 0 3%, 100% 0%, 100% 93%);
 }
 
+.proj-pg-text-container h2 {
+    font-size: 16px;
+    align-self: center;
+    margin-top: 28px;
+}
+
 .proj-pg-link-container {
     display: flex;
     justify-content: flex-end;
@@ -788,6 +794,10 @@ footer > p {
         -webkit-clip-path: polygon(0% 100%, 0 5%, 100% 0%, 100% 91%);
     }
 
+    .proj-pg-text-container h2 {
+        font-size: 20px;
+    }
+
     .tech-logo {
         font-size: 17px;
     }
@@ -924,7 +934,7 @@ footer > p {
 
 @media (min-width: 900px) {
     .proj-pg-text-container{
-        padding: 80px 30px 80px 30px;
+        padding: 80px 30px 100px 30px;
     }
 
     .proj-pg-link-container {
