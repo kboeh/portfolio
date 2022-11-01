@@ -31,7 +31,7 @@ email.forEach((e) => {
 
 //slide-in project imgs
 function reveal() {
-  const slideIn = document.querySelectorAll(".project-img-container, .project-img-container-mid, .slide-up");
+  const slideIn = document.querySelectorAll(".project-img-container, .project-img-container-mid, .about-link, .slide-up");
   //loop runs on every scroll checking for target elements
   for (let i = 0; i < slideIn.length; i++) {
     const windowHeight = window.innerHeight;
@@ -44,6 +44,10 @@ function reveal() {
     //if function fires at desired distance 
     if (elementTop < windowHeight - projectVisible) {
       slideIn[i].classList.add("proj-active");
+    }
+    //about button
+    if (elementTop < windowHeight - projectVisible) {
+      slideIn[i].classList.add("about-active");
     }
     //footer buttons
     if (elementTop < windowHeight) {

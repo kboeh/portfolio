@@ -208,7 +208,7 @@ then ends by shrinking down to 100% size */
     100% {
       transform: scale(1, 1);
     }
-  }
+}
 
 h1 {
     font-size: 33px;
@@ -263,6 +263,7 @@ h1 {
     filter: drop-shadow(0px 0px 10px #15FFEE);
 }
 
+/* below is for the animation that happens when the element comes into view  */
 .project-img-container.proj-active, .project-img-container-mid.proj-active {
     transform: translateX(0);
     opacity: 1;
@@ -305,14 +306,34 @@ h1 {
     padding: 0 20px 0 20px;
     filter: drop-shadow(0px 4px 4px #15FFEE);
     margin: 55px 0 55px 0;
+    /* below is for the animation that happens when the element comes in view */
+    opacity: 0;
+    transition: 1s all ease;
+    
 }
 
+/* below is for hover animation */
 .shrink { 
     transition: all .2s ease-in-out; 
 }
     
 .shrink:hover { 
     transform: scale(0.9); 
+}
+
+/* below is for the animation that happens when the element comes into view  */
+@keyframes zoom-in {
+    0% {
+      transform: scale(.5, .5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
+
+.about-link.about-active {
+    animation: zoom-in 1s ease;
+    opacity: 1;
 }
 
 .grow { 
