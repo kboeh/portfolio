@@ -308,7 +308,7 @@ h1 {
     transition: 1s all ease;
 }
 
-/* below is for hover effect */
+/* below is for hover effect for about button */
 .shrink { 
     transition: all .2s ease-in-out; 
 }
@@ -317,7 +317,7 @@ h1 {
     transform: scale(0.9); 
 }
 
-/* below is for the animation that happens when the element comes into view  */
+/* below is for the animation that happens when the about button comes into view  */
 @keyframes zoom-in {
     0% {
       transform: scale(.5, .5);
@@ -726,6 +726,7 @@ footer > p {
     justify-content: space-between;
     grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     padding-top: 25px;
+    transition: all 1s ease-in-out; 
 }
 
 .tech-logo {
@@ -954,7 +955,7 @@ footer > p {
         -webkit-clip-path: none;
     }
 
-    .nav-links li:nth-child(1), .nav-links li:nth-child(2), .nav-links li:nth-child(3), .nav-links li:nth-child(4) {
+    .nav-links > li {
         transition: all .2s ease-in-out; 
     }
 }
