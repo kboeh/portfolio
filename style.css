@@ -757,6 +757,22 @@ footer > p {
     max-width: 370px;
 }
 
+.error-page-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.error-page-main img{
+    width: 290px;
+    height: auto;
+    padding-bottom: 20px;
+}
+
 @media (min-width: 420px) {
     .food-logo {
         width: 400px;
@@ -916,6 +932,10 @@ footer > p {
     
     .resume-button img {
         height: 43px;
+    }
+
+    .error-page-main img{
+        width: initial;
     }
 }
 
