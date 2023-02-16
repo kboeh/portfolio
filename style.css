@@ -31,7 +31,7 @@ nav {
 .logo {
   margin-left: 20px;
   position: absolute;
-  top: 33%;
+  top: 25%;
   filter: drop-shadow(0px 0px 20px #15ffee);
 }
 
@@ -296,14 +296,15 @@ h1 {
 .about-link {
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
   color: #ffffff;
   background-color: #162936;
-  width: 156px;
-  height: 156px;
+  width: 9.75rem;
+  height: 9.75rem;
   border-radius: 50%;
-  padding: 0 20px 0 20px;
+  padding: 1px 20px 0 20px;
   filter: drop-shadow(0px 4px 4px #15ffee);
   margin: 55px 0 55px 0;
   opacity: 0;
@@ -658,7 +659,7 @@ footer > p {
   background: #162936;
   font-size: 1rem;
   gap: 20px;
-  padding: 50px 15px 100px 15px;
+  padding: 3.125rem 0.938rem 6.25rem 0.938rem;
   text-align: left;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -691,7 +692,7 @@ footer > p {
   align-self: flex-end;
   position: relative;
   z-index: 1;
-  margin-top: -80px;
+  margin-top: -5rem;
 }
 
 .proj-link {
