@@ -17,7 +17,7 @@ hamburger.forEach((ham) => {
 
 
 //toggle for the envelope-icon and the x-icon (to open/close the email pop-up)
-const email = document.querySelectorAll(".email-button, .email-container > img, .overlay");
+const email = document.querySelectorAll(".contact-button, .email-button, .email-container > img, .overlay");
 const eContainer = document.querySelector(".email-container");
 const overlay = document.querySelector(".overlay");
 
@@ -31,7 +31,7 @@ email.forEach((e) => {
 
 //slide-in project imgs
 function reveal() {
-  const slideIn = document.querySelectorAll(".slide-from-left, .slide-from-right, .about-link, .slide-up");
+  const slideIn = document.querySelectorAll(".slide-from-left, .slide-from-right, .about-link, .slide-up, .slide-up-footer");
   //loop runs on every scroll checking for target elements
   for (let i = 0; i < slideIn.length; i++) {
     const windowHeight = window.innerHeight;
@@ -39,19 +39,14 @@ function reveal() {
     //.getBoundingClientRect().top = area from top of viewport to top of target element
     const elementTop = slideIn[i].getBoundingClientRect().top;
     const projectVisible = 200;
-    //projects
     //windowHeight - projectVisible = sets desired distance between top of viewport to top of target element.
     //if function fires at desired distance 
     if (elementTop < windowHeight - projectVisible) {
-      slideIn[i].classList.add("slide-in-active");
-    }
-    //about button
-    if (elementTop < windowHeight - projectVisible) {
-      slideIn[i].classList.add("about-active");
+      slideIn[i].classList.add("animate");
     }
     //footer buttons
     if (elementTop < windowHeight) {
-      slideIn[i].classList.add("button-active");
+      slideIn[i].classList.add("footer-animate");
     }
   }
 }
