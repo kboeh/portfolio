@@ -76,7 +76,7 @@ nav {
   color: #15ffee;
 }
 
-/* hamburger animation */
+/* >>>>>>>>>>>>>>>>>>>>>>.hamburger animation */
 svg {
   position: absolute;
   cursor: pointer;
@@ -218,7 +218,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-/* project section on homepage */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>project section on homepage */
 .all-projects-container {
   display: flex;
   flex-direction: column;
@@ -296,7 +296,7 @@ h1 {
   transition: 1s all ease;
 }
 
-/* below is for the animation that happens when the about button comes into view  */
+/* >>>>>>>>>>>>>>>>>>>below is for the animation that happens when the about button comes into view  */
 @keyframes zoom-in {
   0% {
     transform: scale(0.5, 0.5);
@@ -353,7 +353,7 @@ footer > p {
   font-family: "Roboto", sans-serif;
   margin-bottom: 30px;
 }
-/* extra margin for pages other than home */
+/* >>>>>>>>>>>>>>>>>>>>extra margin for pages other than home */
 .foot-space {
   margin-top: 250px;
 }
@@ -422,7 +422,7 @@ footer > p {
   transition: 2s all ease;
 }
 
-/* email pop-up */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>email pop-up */
 .email-container {
   position: fixed;
   top: -800px;
@@ -528,7 +528,7 @@ footer > p {
   display: initial;
 }
 
-/* email thank you page */
+/* >>>>>>>>>>>>>>>>>>>>>email thank you page */
 .e-response-container {
   display: flex;
   align-items: center;
@@ -557,7 +557,7 @@ footer > p {
   animation: bounce 300ms alternate 6 cubic-bezier(0.2, 0.65, 0.6, 1);
 }
 
-/* e-response animation */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>e-response animation */
 @keyframes bounce {
   from {
     transform: translateY(0px);
@@ -567,7 +567,7 @@ footer > p {
   }
 }
 
-/* project pages */
+/* >>>>>>>>>>>>>>>>>>>>>>project pages */
 .proj-pg-header {
   display: flex;
   flex-direction: column;
@@ -711,6 +711,15 @@ footer > p {
   height: auto;
   padding-bottom: 15px;
 }
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 50px 0 50px 0;
+}
+.luster-logo {
+  width: 70%;
+}
 .spy-outer-container {
   display: flex;
   justify-content: center;
@@ -732,6 +741,9 @@ footer > p {
   height: auto;
   right: 90px;
   top: 60px;
+}
+.bhi-logo {
+  width: 75%;
 }
 .spider-web {
   display: flex;
@@ -765,10 +777,9 @@ footer > p {
 .brand {
   width: 90%;
   height: auto;
-  /* margin-bottom: 100px; */
 }
 
-/* about page */
+/* >>>>>>>>>>>>>>>>>>>>>about page */
 .about-header {
   padding: 150px 0 70px 0;
 }
@@ -937,18 +948,25 @@ footer > p {
   .socket {
     width: 140px;
   }
+  .logo-container {
+    margin: 100px 0 100px 0;
+  }
+  .luster-logo {
+    width: 292px;
+  }
   .web {
     width: 280px;
   }
   .spider {
-    width: 180px;
+    width: 150px;
   }
   .spyglass {
     width: 220px;
   }
   .shine {
     width: 190px;
-    right: 133px;
+    right: 95px;
+    top: 75px;
   }
   .about-header img {
     width: 380px;
@@ -1031,21 +1049,28 @@ footer > p {
     margin: 100px 0 100px 0;
   }
   .web {
-    width: 520px;
+    width: 460px;
   }
   .spider {
-    width: 420px;
+    width: 230px;
+  }
+  .bhi-logo {
+    width: 442px;
   }
   .spyglass {
-    width: 400px;
+    width: 380px;
   }
   .shine {
     width: 270px;
-    right: 205px;
-    top: 160px;
+    right: 191px;
+    top: 150px;
   }
   .line-art {
+    height: 480px;
     margin: 100px 0 100px 0;
+  }
+  .brand {
+    width: 477px;
   }
   .tech-logo {
     font-size: 1.063rem;
@@ -1159,7 +1184,7 @@ footer > p {
     flex-direction: row-reverse;
   }
   #canvas {
-    width: 500px !important;
+    width: 430px !important;
   }
   .food-logo {
     width: 700px;
@@ -1175,20 +1200,6 @@ footer > p {
   }
   .socket {
     width: 330px;
-  }
-  .web {
-    width: 700px;
-  }
-  .spider {
-    width: 600px;
-  }
-  .spyglass {
-    width: 520px;
-  }
-  .shine {
-    width: 390px;
-    right: 250px;
-    top: 190px;
   }
 }
 
