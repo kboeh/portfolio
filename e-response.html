@@ -58,10 +58,10 @@
             </svg>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html#project-link">Projects</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="index.html#contact-link">Contact</a></li>
-            <li><a target="_blank" href="Karl_Boehringer_Resume.pdf">Resume</a></a></li>
+            <li><a class="shrink" href="index.html#project-link">Skills</a></li>
+            <li><a class="shrink" href="about.html">About Me</a></li>
+            <li class="shrink contact-button">Contact</li>
+            <li><a class="shrink" target="_blank" href="Karl_Boehringer_Resume.pdf">Resume</a></a></li>
         </ul>
     </nav>
     
@@ -72,6 +72,40 @@
             <p>You will hear from me soon!</p>
         </div>
     </div>
+
+    <footer class='foot'>
+      <h2>Contact Me</h2>
+      <p class="from-you">I would love to hear from you</p>
+      <div class="contact">
+          <button class="email-button slide-up-footer" type="button">
+             <img src="img/email.png" alt="email icon"> 
+          </button>
+          <a class="linkedin-button slide-up-footer" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kboeh3">
+              <img src="img/linkedin.png" alt="linkedIn logo">
+          </a>
+          <a class="github-button slide-up-footer" target="_blank" rel="noreferrer" href="https://github.com/kboeh">
+              <img src="img/github.png" alt="GitHub logo">
+          </a> 
+          <a class="resume-button slide-up-footer" target="_blank" href="Karl_Boehringer_Resume.pdf">
+              <img src="img/resume.png" alt="paper icon">
+          </a>
+      </div>
+  </footer>
+
+  <div class="overlay"></div>
+
+  <div class="email-container">
+      <img class="shrink" src="img/close.png" alt="close button">
+      <form class="email-form" action="https://formsubmit.co/e30b87cbf7d0890356791c5aba7f5d9c" method="POST">
+          <input class="nameEmail" type="text" name="name" placeholder="Name" required>
+          <input class="nameEmail" type="email" name="email" placeholder="Email Address (optional)">
+          <textarea class="message" rows="5" cols="60" name="description" placeholder="What can I do for you?"
+              required></textarea>
+          <input type="hidden" name="_subject" value="Karl's Portfolio">
+          <input type="hidden" name="_next" value="https://kboeh.github.io/portfolio/e-response.html">
+          <button type="submit">Send</button>
+      </form>
+  </div>
     
 
     <script src="script.js"></script>

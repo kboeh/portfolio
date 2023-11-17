@@ -59,10 +59,10 @@
             </svg>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html#project-link">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="index.html#contact-link">Contact</a></li>
-            <li><a target="_blank" href="Karl_Boehringer_Resume.pdf">Resume</a></a></li>
+            <li class="shrink"><a href="index.html#project-link">Skills</a></li>
+            <li class="shrink"><a href="#">About Me</a></li>
+            <li class="shrink contact-button">Contact</li>
+            <li class="shrink"><a target="_blank" href="Karl_Boehringer_Resume.pdf">Resume</a></a></li>
         </ul>
     </nav>
 
@@ -74,7 +74,10 @@
     <main>
         <div class="proj-pg-text-container about-pg-text-container">
             <p>
-                I am a teacher turned software developer. I enjoy the learning, problem solving, and creativity that comes with software development. I have a passion for designing and building stimulating content that offers responsive and smooth functionality for my users. I am constantly learning and practicing my craft and I am always excited to add the next skill to my toolbox. I have utilized the following technologies on projects.
+                With 17 years of experience in the realm of education, I have honed my skills as an effective communicator and mentor. My passion for digital art drives my creative spirit, which I harness to craft captivating visual experiences that resonate with audiences. Whether it's creating unique branding identities, designing eye-catching websites, or developing cutting-edge online platforms, my diverse skill set allows me to seamlessly blend artistry and technology to meet your digital needs. 
+            </br>
+            </br>
+                I am constantly learning and practicing my craft and I am always excited to add the next skill to my toolbox. I have utilized the following technologies on projects.
             </p>
             <div class="tech-logo-container slide-up">
                 <div class="tech-logo">
@@ -138,13 +141,39 @@
                     <p>Photoshop</p>
                 </div>
             </div>
-            <p>
-                I also enjoy contributing to open source projects or using my skill set to help people achieve their own goals. When I'm not coding, you will find me spending time with my family. We like to go on hikes or immerse ourselves in gaming (either with dice or on a screen). I also enjoy creating digital art and photography. Here is a little peek at some of my work.
-            </p>
         </div>
-        <div class="about-img-container">
-            <img class="about-img" src="img/globe.png" alt="globe being struck by sunlight">
-            <img class="about-img" src="img/prisoner.png" alt="ratty dog">
+        <footer class='foot'>
+            <h2>Contact Me</h2>
+            <p class="from-you">I would love to hear from you</p>
+            <div class="contact">
+                <button class="email-button slide-up-footer" type="button">
+                   <img src="img/email.png" alt="email icon"> 
+                </button>
+                <a class="linkedin-button slide-up-footer" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kboeh3">
+                    <img src="img/linkedin.png" alt="linkedIn logo">
+                </a>
+                <a class="github-button slide-up-footer" target="_blank" rel="noreferrer" href="https://github.com/kboeh">
+                    <img src="img/github.png" alt="GitHub logo">
+                </a> 
+                <a class="resume-button slide-up-footer" target="_blank" href="Karl_Boehringer_Resume.pdf">
+                    <img src="img/resume.png" alt="paper icon">
+                </a>
+            </div>
+        </footer>
+    
+        <div class="overlay"></div>
+    
+        <div class="email-container">
+            <img class="shrink" src="img/close.png" alt="close button">
+            <form class="email-form" action="https://formsubmit.co/e30b87cbf7d0890356791c5aba7f5d9c" method="POST">
+                <input class="nameEmail" type="text" name="name" placeholder="Name" required>
+                <input class="nameEmail" type="email" name="email" placeholder="Email Address (optional)">
+                <textarea class="message" rows="5" cols="60" name="description" placeholder="What can I do for you?"
+                    required></textarea>
+                <input type="hidden" name="_subject" value="Karl's Portfolio">
+                <input type="hidden" name="_next" value="https://kboeh.github.io/portfolio/e-response.html">
+                <button type="submit">Send</button>
+            </form>
         </div>
     </main>
 

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Information about Karl Boehringer's third project.">
-    <title>Web Development</title>
+    <title>Digital Art</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
@@ -58,28 +58,25 @@
             </svg>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html#project-link">Skills</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="index.html#contact-link">Contact</a></li>
-            <li><a target="_blank" href="Karl_Boehringer_Resume.pdf">Resume</a></a></li>
+            <li><a class="shrink" href="index.html#project-link">Skills</a></li>
+            <li><a class="shrink" href="about.html">About Me</a></li>
+            <li class="shrink contact-button">Contact</li>
+            <li><a class="shrink" target="_blank" href="Karl_Boehringer_Resume.pdf">Resume</a></a></li>
         </ul>
     </nav>
 
     <header class='proj-pg-header'>
         <img class="proj-pg-img this-logo" src="img/logo_lg.png" alt="K.B. logo"></img>
-        <h1>This Website</h1>
+        <h1>Digital Art</h1>
     </header>
 
     <main>
         <div class="proj-pg-text-container">
             <p>
-              As my ability grows, so does my portfolio website. One could say we evolve together. I am constantly adding new elements, redesigning its components, trying new color schemes, tinkering with animations, etc. From its first iteration to what you are seeing now, it truly represents my journey as a software developer. 
+              I employ the Adobe Suite for crafting digital artwork, encompassing elements like web-ready animations, illustrations, and iconography. Explore a selection of my recent creations showcased below.
             </p>
-            <p>
-              I wanted to provide my visitors with a user interface built with a clean neon design. Utilizing a carefully selected color scheme combined with some CSS magic, I gave select elements a neon glow effect. I also created my logo, which one can find serving different purposes throughout the site, using Adobe Illustrator.
-            </p>
-            <h2>Tech Stack</h2>
-            <div class="tech-logo-container slide-up">
+            
+            <!-- <div class="tech-logo-container slide-up">
                 <div class="tech-logo">
                    <img src="img/html.png" alt="HTML logo">
                    <p>HTML5</p> 
@@ -104,13 +101,69 @@
                     <img src="img/photoshop.png" alt="Adobe Illustrator logo">
                     <p>Photoshop</p>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="proj-pg-link-container">
-             <div class="proj-pg-link">
-                 <a target=_blank rel=noreferrer href="https://github.com/KBoeh/portfolio"><img class="proj-link proj-github-link" src="img/github.png" alt="github icon"></a>
-             </div> 
-         </div>
+        <div class="socket-plug-container">
+          <div class="electric-plug slide-from-left">
+            <img class="plug" src="img/plug.svg" alt="electrical plug" />
+            <img class="electricity blink" src="img/electricity.svg" alt="electricity" />
+          </div>
+          <img class="socket slide-from-right" src="img/socket.svg" alt="socket with a cord attached to earth" />
+        </div>
+
+        <div class="spider-web">
+          <img class="web" src="img/web.svg" alt="spiderweb" />
+          <img class="spider slide-down" src="img/spider.svg" alt="spider" />
+        </div>
+
+        <div class="spy-outer-container">
+          <div class="spy-inner-container slide-from-right">
+            <img class="spyglass" src="img/spyglass.svg" alt="cartoon of a man with a giant floating spyglass" />
+            <img class="shine blink" src="img/shine.svg" alt="light shining" />
+          </div>
+        </div>
+        
+        <div class="line-art-container">
+          <img class="line-art slide-up" src="img/logo-bday.svg" alt="line art of a woman's face">
+        </div>
+
+        <div class="brand-container">
+          <img class="brand slide-from-left" src="img/brand.svg" alt="branding iron that reads 'logo'">
+        </div>
+        
+        <footer class='foot foot-space'>
+          <h2>Contact Me</h2>
+          <p class="from-you">I would love to hear from you</p>
+          <div class="contact">
+              <button class="email-button slide-up-footer" type="button">
+                 <img src="img/email.png" alt="email icon"> 
+              </button>
+              <a class="linkedin-button slide-up-footer" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/kboeh3">
+                  <img src="img/linkedin.png" alt="linkedIn logo">
+              </a>
+              <a class="github-button slide-up-footer" target="_blank" rel="noreferrer" href="https://github.com/kboeh">
+                  <img src="img/github.png" alt="GitHub logo">
+              </a> 
+              <a class="resume-button slide-up-footer" target="_blank" href="Karl_Boehringer_Resume.pdf">
+                  <img src="img/resume.png" alt="paper icon">
+              </a>
+          </div>
+      </footer>
+  
+      <div class="overlay"></div>
+  
+      <div class="email-container">
+          <img class="shrink" src="img/close.png" alt="close button">
+          <form class="email-form" action="https://formsubmit.co/e30b87cbf7d0890356791c5aba7f5d9c" method="POST">
+              <input class="nameEmail" type="text" name="name" placeholder="Name" required>
+              <input class="nameEmail" type="email" name="email" placeholder="Email Address (optional)">
+              <textarea class="message" rows="5" cols="60" name="description" placeholder="What can I do for you?"
+                  required></textarea>
+              <input type="hidden" name="_subject" value="Karl's Portfolio">
+              <input type="hidden" name="_next" value="https://kboeh.github.io/portfolio/e-response.html">
+              <button type="submit">Send</button>
+          </form>
+      </div>
     </main>
 
     <script src="script.js"></script>

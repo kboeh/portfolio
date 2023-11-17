@@ -31,7 +31,7 @@ email.forEach((e) => {
 
 //slide-in project imgs
 function reveal() {
-  const slideIn = document.querySelectorAll(".slide-from-left, .slide-from-right, .about-link, .slide-up, .slide-up-footer");
+  const slideIn = document.querySelectorAll(".slide-from-left, .slide-from-right, .about-link, .slide-up, .slide-up-footer, .slide-down, .blink");
   //loop runs on every scroll checking for target elements
   for (let i = 0; i < slideIn.length; i++) {
     const windowHeight = window.innerHeight;
